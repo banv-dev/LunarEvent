@@ -1,0 +1,38 @@
+{
+    "addOns": {
+      "sheets": {
+        "homepageTrigger": {
+          "runFunction": "onSheetHomepage"
+        },
+        "onFileScopeGrantedTrigger": {
+          "runFunction": "onFileScopeGrantedEditors"
+        }
+      },
+      "common": {
+        "useLocaleFromApp": true,
+        "homepageTrigger": {
+          "enabled": false
+        },
+        "logoUrl": "https://play-lh.googleusercontent.com/fjnNV-3KBihOVr50aYvKVGRiqeD2gRxH5S2_CnaA9LiZ8TTxY0R7NnFmmL8q5YrBmv0=s128-rw",
+        "name": "Sự kiện trong lịch âm"
+      }
+    },
+    "timeZone": "Asia/Ho_Chi_Minh",
+    "dependencies": {
+      "enabledAdvancedServices": [
+        {
+          "userSymbol": "Calendar",
+          "serviceId": "calendar",
+          "version": "v3"
+        }
+      ]
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "oauthScopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/script.locale",
+      "https://www.googleapis.com/auth/spreadsheets.currentonly",
+      "https://www.googleapis.com/auth/drive.file"
+    ],
+    "runtimeVersion": "DEPRECATED_ES5"
+  }
